@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int happy=0,rem=0,num=n;
+        while(num>0)
+        {
+            rem=num%10;
+            happy+=(rem*rem);
+            num=num/10;
+            if(num<=0 && happy>9)
+            {
+                num=happy;
+                happy=0;
+            }
+            
+        }
+        if(happy==1)
+        {
+            System.out.println("It is a happy number");
+        }
+        else
+        {
+            System.out.println("It is not a happy number");
+        }
+	}
+}

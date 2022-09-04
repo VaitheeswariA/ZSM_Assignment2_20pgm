@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Hourglass {
+public class Columnbasesort {
 
 	public static void main(String[] args) {
 		
